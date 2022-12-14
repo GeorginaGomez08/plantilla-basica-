@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagenes/flor.jpg" sizes="32x32">
+    <script src="./index.js"></script>
+    <title>Plantilla Georgina 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li onclick="changeImage('home')"><a href="#">Home</a></li>
+                <li onclick="changeImage('news')"><a href="#">News</a></li>
+                <li onclick="changeImage('events')"><a href="#">Events</a></li>
+                <li onclick="changeImage('contact')"><a href="#">Contact Us</a></li>
+                <li onclick="changeImage('login')"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="buscar">
+            <div>
+                <input type="text" class="inputBuscar" oninput="onclickhandler(this)">
+                <button  onclick="changeImage('buscar')" id="btnBuscar" type="submit" class="buscarBtn" disabled><i class="fa fa-search"></i></button>
+            </div>
+            <div>
+                <button type="submit" class="nuBtn"><span>Our Brands</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="titulos">
+        <div class="tituIzq">
+            <h3>Stiles</h3>
+        </div>
+        <div class="tituDer">
+            <h3>Total Production Solutions</h3>
+        </div>
+    </div>
+    <div class="seccionDos">
+        <div class="seccion">
+            <ul>
+                <li onclick="changeImage('products')">Products</li>
+                <li onclick="changeImage('services')">Services</li>
+                <li onclick="changeImage('solutions')">Solutions</li>
+                <li onclick="changeImage('parts')">Parts</li>
+                <li onclick="changeImage('support')">Support</li>
+                <li onclick="changeImage('about')">About Us</li>
+            </ul>
+        </div>
+    </div>
+    <div class="seccionTres">
+        <div class="division">
+            <div class="conteIzq">
+                <h2>Products</h2>
+                <ul>
+                    <li>Applications</li>
+                    <li>Brands</li>
+                    <li>Products Types</li>
+                    <li>Product Selector</li>
+                    <li>Specials</li>
+                </ul>
+            </div>
+            <div>
+                <img id="img1" src="./imagenes/rosa.jpg" alt="imagen" class="img-cont-1">
+            </div>
+            <div>
+                <img id="img2" src="./imagenes/rosa.jpg" alt="imagen" class="img-cont-1">
+            </div>
+            <div>
+                <img id="img3" src="./imagenes/rosa.jpg" alt="imagen" class="img-cont-1">
+            </div>
+            <div>
+                <img id="img4" src="./imagenes/rosa.jpg" alt="imagen" class="img-cont-1">
+            </div>
+        </div>
+        <div class="seccionTresDer">
+            <div class="producto">
+                <img id="productoImg" src="./imagenes/girasol.jpg" alt="imagen" class="img-cont-2">
+            </div>
+            <div class="descrip"
+                <h2>IRONWOOD</h2>
+                <h3>PS 1000</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque quia quisquam possimus illum
+                    unde doloribus doloremque optio hic nisi id. Possimus, explicabo. Eveniet, voluptates enim ea
+                    inventore nam perspiciatis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eius
+                    tenetur aut facilis facere, laboriosam minus asperiores ad ut eveniet dolorum aliquam, perspiciatis
+                    velit porro illum suscipit quia quisquam perferendis.</P>
+            </div>
+            <div class="botonesLat">
+                <button type="submit" class="solicitudInfo"><span>Request Information</span></button>
+                <button type="submit" class="vistaPrecio"><span>View Princing </span><br> & Technical Specs</button>
+            </div>
+            <div class="productoInfo">
+                <p>Related Products</p>
+                <br>
+                <p>Aplications: Classical Machining Solid Wood</p>
+                <br>
+                <p>Brands: hwww0000</p>
+                <br>
+                <p>Product Types: Shappers</p>
+                <br>
+                <p>Series: Artisan Shappers Series</p>
+            </div>
+            <div class="caracter">
+                <h3>Features</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At maiores repellat totam voluptatum
+                        recusandae unde.</li>
+                </ul>
+            </div>
+            <div class="productoTabla">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Product Specifications</th>
+                    </tr>
+                    <tr>
+                        <td>Working Table Dimensions</td>
+                        <td>850 mm x 1300 mm</td>
+                    </tr>
+                    <tr>
+                        <td>Vertical Spinde Stroke</td>
+                        <td>150 mm</td>
+                    </tr>
+                    <tr>
+                        <td>Spindie Height Adjustment</td>
+                        <td>Electronic</td>
+                    </tr>
+                    <tr>
+                        <td>Spindie Position Display</td>
+                        <td>Digital Display</td>
+                    </tr>
+                    <tr>
+                        <td>Spindie Tilt</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="relacionado">
+                <h2>
+                    Related Products    & Accesories
+                </h2>
+                <div class="imgRelac">
+                    <div class="imgDivi">
+                        <img id="img5" src="./imagenes/flor.jpg" alt="imagen">
+                        <label for="">Label</label>
+                    </div>
+                    <div class="imgDivi">
+                        <img id="img6" src="./imagenes/flor.jpg" alt="imagen">
+                        <label for="">Label</label>
+                    </div>
+                    <div class="imgDivi">
+                        <img id="img7" src="./imagenes/flor.jpg" alt="imagen">
+                        <label for="">Label</label>
+                    </div>
+                    <div class="imgDivi">
+                        <img id="img8" src="./imagenes/flor.jpg" alt="imagen">
+                        <label for="">Label</label>
+                    </div>
+                    <div class="imgDivi">
+                        <img id="img9" src="./imagenes/flor.jpg" alt="imagen">
+                        <label for="">Label</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

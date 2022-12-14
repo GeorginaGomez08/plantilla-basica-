@@ -1,0 +1,288 @@
+body {
+    background-color: white; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    border-bottom: 0.2rem solid;
+}
+
+.navbar {
+    display: grid;
+    grid-auto-rows: 46px;
+    border-style: solid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 100%;
+    background-color: #CBCBCB;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    cursor: pointer;
+    border-right: 2.5px solid;
+    padding-right: 5px;
+    list-style-type: none;
+    padding-left: 3px;
+}
+
+.navbar nav ul li:last-child {
+    border-right: none;
+}
+
+.buscar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-column: 2/-1;
+}
+
+.inputBuscar{
+    height: 25px;
+    width: 230px;
+    border-radius: 7px;
+    border: 2.8px solid rgba(184, 178, 178, 0.801);
+    padding: 11px;
+}
+
+.buscarBtn {
+    width: 48px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2.8px solid rgba(184, 178, 178, 0.801);
+}
+
+.buscarBtn:hover:enabled {
+    background-color: rgba(163, 154, 141, 0.801);
+}
+
+.nuBtn {
+    width: 98px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 15px;
+    border-radius: 11px;
+    border: 2.8px solid rgba(184, 178, 178, 0.801);
+}
+
+.titulos {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 100px;
+}
+
+.tituDer {
+    display: flex;
+    font-size: 30px;
+    justify-content: end;
+    align-items: center;
+}
+
+.tituIzq {
+    display: flex;
+    font-size: 45px;
+    align-items: center;
+    justify-content: start;
+}
+
+.seccionDos {
+    border-style: solid;
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: 1fr;
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    background: #CBCBCB;
+}
+
+.seccion ul li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 44px;
+    text-transform: uppercase;
+}
+
+.seccionTres {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 30px;
+}
+
+.division {
+    display: grid;
+    grid-template-rows: repeat(5, 150px);
+    gap: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: 3px solid black;
+    padding-top: 20px;
+}
+
+.conteIzq h2{
+    text-transform: uppercase;
+}
+
+.conteIzq ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.img-cont-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.seccionTresDer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: minmax(360px, auto) minmax(270px, auto) minmax(187px, 220px) 1fr;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    width: 350px;
+    height: 350px;
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.descrip>h2 {
+    padding-bottom: 20px;
+}
+
+.descrip>h3 {
+    padding-bottom: 20px;
+    font-size: 23px;
+}
+
+.botonesLat {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.botonesLat button {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.solicitudInfo {
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vistaPrecio {
+    height: 70px;
+    line-height: 2;
+    background-color: #CBCBCB;
+    cursor: pointer;
+}
+
+.vistaPrecio span {
+    font-weight: 700;
+}
+
+.productoInfo p {
+    display: inline-block;
+    text-justify: justify;
+}
+
+.productoInfo p:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.caracter {
+    grid-column: 4/-3;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+
+.caracter ul {
+    margin-left: 30px;
+}
+
+.productoTabla {
+    grid-column: -4/-1;
+    margin-right: 20px;
+}
+
+.productoTabla table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    width: 20px;
+}
+
+.relacionado {
+    grid-column: -4/-1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.imgRelac {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.imgDivi {
+    width: 200px;
+    height: 200px;
+}
+
+.imgDivi img {
+    width: 100%;
+    height: 100%;
+}
